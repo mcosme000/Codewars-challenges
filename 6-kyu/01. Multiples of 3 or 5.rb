@@ -7,3 +7,28 @@ Finish the solution so that it returns the sum of all the multiples of 3 or 5 be
 Note: If the number is a multiple of both 3 and 5, only count it once.
   
 =end
+
+
+def solution(number)
+ sum = 0
+ i = 0
+
+  if number > 0 
+    loop do 
+      if i % 3 == 0 || i % 5 == 0
+        sum += i
+        puts i
+      end
+   
+      i += 1
+      break if i >= number
+    end
+  elsif number < 0
+    puts 0
+  end
+  
+  puts sum
+end
+
+
+solution(23)
