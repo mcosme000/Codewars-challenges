@@ -15,3 +15,15 @@ function vaporcode(string) {
 
   return string;
 }
+
+/* 
+in the regex expresion above: 
+g means GLOBAL
+If I don't add g, it will only delete the spaces in the first element of the string.
+
+*/
+
+// * * * REPLACE() string.method
+
+string = "JS is a difficult language, but I like JS";
+newString.replace("difficult", "not that difficult");
